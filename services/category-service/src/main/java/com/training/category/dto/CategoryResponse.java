@@ -1,4 +1,7 @@
 package com.training.category.dto;
 
-public record CategoryResponse() {
+public record CategoryResponse(
+        String id,
+        String name
+) {
 }
