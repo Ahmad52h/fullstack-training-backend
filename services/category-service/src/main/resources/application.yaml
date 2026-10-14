@@ -1,0 +1,22 @@
+
+spring:
+  application:
+    name: category-service
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/category_db
+    username: khaledtest
+    password: ${DB_PASSWORD:}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8081
